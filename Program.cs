@@ -25,6 +25,13 @@ namespace C_Sharp_HW_Inheritance
             Triangle trg = new Triangle("Треугольник", 12, 12, 12);
             Console.WriteLine(trg);
             Console.WriteLine();
+
+            CompoundShape shp = new CompoundShape();
+            shp.AddShape(new Triangle("Треугольник", 12, 12, 12));
+            Console.WriteLine(shp);
+            shp.AddShape(new Rectangle("Прямоугольник", 3, 2));
+            Console.WriteLine(shp);
+            Console.WriteLine(shp.getSquare());
         }
     }
 }

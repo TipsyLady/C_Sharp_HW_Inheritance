@@ -29,7 +29,7 @@ namespace C_Sharp_HW_Inheritance
 
         public override string ToString()
         {
-            return base.ToString() + $", a = {a}, b = {b}";
+            return base.ToString() + $",со сторонами a = {a}, b = {b}";
         }
 
         //переопределение абстрактного метода

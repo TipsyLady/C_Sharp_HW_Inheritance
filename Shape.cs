@@ -37,7 +37,7 @@ namespace C_Sharp_HW_Inheritance
 
         public override string ToString()
         {
-            return Name + ": P = " + perimeter().ToString() + ", S= " + square().ToString();
+            return Name + ": Периметр = " + perimeter().ToString() + ", Площадь = " + square().ToString();
         }
 
         public abstract double perimeter();
