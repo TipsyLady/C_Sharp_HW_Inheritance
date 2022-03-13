@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_Sharp_HW_Inheritance
 {
-    class Rectangle: Shape
+    class Rectangle: Shape, IDrawable
 
     {
         private double a, b; //стороны прямоугольника
@@ -31,6 +31,21 @@ namespace C_Sharp_HW_Inheritance
         {
             return base.ToString() + $",со сторонами a = {a}, b = {b}";
         }
+
+        public void Draw()
+        {
+            for (int i = 0; i < a; i++)
+            {
+                for (int j = 0; j < b; j++)
+                    Console.Write("* ");
+                Console.WriteLine();
+            }
+        }
+
+        //public void Print()
+        //{
+        //    Console.WriteLine(this);
+        //}
 
         //переопределение абстрактного метода
         public override double perimeter()

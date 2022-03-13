@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_Sharp_HW_Inheritance
 {
-    class Triangle: Shape
+    class Triangle: Shape, IPrintable
     {
         private double a { get; set; }
         private double b { get; set; }
@@ -30,6 +30,28 @@ namespace C_Sharp_HW_Inheritance
         public override string ToString()
         {
             return base.ToString() + $",со сторонами a = {a}, b = {b}, c = {c}";
+        }
+
+        //public void Draw()
+        //{
+        //    double P = (a + b + c) / 2;
+        //    double S = Math.Sqrt((P * (P - a) * (P - b) * (P - c)));
+        //    double height = ((2 * S / c));
+           
+        //    for (int i = 0; i <= height; i++)
+        //    {
+        //        for (int j = 0; j <= i; j++)
+        //        {
+        //            Console.Write('*');
+        //        }
+        //        Console.WriteLine();
+        //    }
+
+        //}
+
+        public void Print()
+        {
+            Console.WriteLine(this);
         }
 
         //переопределение абстрактного метода

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_Sharp_HW_Inheritance
 {
-    class CompoundShape
+    class CompoundShape: IDrawable, IPrintable
     {
         List<Shape> shapes;
 
@@ -35,6 +35,30 @@ namespace C_Sharp_HW_Inheritance
             foreach (Shape shape in shapes)
                 res += shape.ToString() + "\n";
             return res;
+        }
+
+        public void Print()
+        {
+            foreach (var figure in shapes) 
+            {
+                if (figure is IPrintable)
+                {
+                    ((IPrintable)figure).Print();
+                }
+                else { Console.WriteLine("Фигура не реализует данный интерфейс"); }
+            }
+        }
+
+        public void Draw()
+        {
+            foreach (var figure in shapes) 
+            {
+                if (figure is IDrawable)
+                {
+                    ((IDrawable)figure).Draw(); 
+                }
+                else { Console.WriteLine("Фигура не реализует данный интерфейс"); }
+            }
         }
     }
 }
