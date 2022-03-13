@@ -11,7 +11,7 @@ namespace C_Sharp_HW_Inheritance
         static void Main(string[] args)
         {
            // создать прямоугольник
-            Rectangle rect = new Rectangle("Прямоугольник", 3, 2);
+            Rectangle rect = new Rectangle("Прямоугольник", 7, 10);
             Console.WriteLine(rect);
             Console.WriteLine();
             rect.Draw();
