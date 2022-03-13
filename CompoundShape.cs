@@ -19,7 +19,7 @@ namespace C_Sharp_HW_Inheritance
         {
             shapes.Add(shape);
         }
-
+        //Метод получения площади
         public double getSquare()
         {
             Console.WriteLine("Площадь всех фигур равна:");
@@ -37,6 +37,7 @@ namespace C_Sharp_HW_Inheritance
             return res;
         }
 
+        //Методы отрисовки или печати
         public void Print()
         {
             foreach (var figure in shapes) 

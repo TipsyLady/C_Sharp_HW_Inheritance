@@ -29,7 +29,7 @@ namespace C_Sharp_HW_Inheritance
             Console.WriteLine();
             trg.Print();
 
-
+            //Сцена фигур
             CompoundShape shp = new CompoundShape();
             shp.AddShape(new Triangle("Треугольник", 12, 12, 12));
             Console.WriteLine(shp);

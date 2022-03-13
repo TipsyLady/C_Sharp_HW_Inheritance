@@ -37,7 +37,7 @@ namespace C_Sharp_HW_Inheritance
         //    double P = (a + b + c) / 2;
         //    double S = Math.Sqrt((P * (P - a) * (P - b) * (P - c)));
         //    double height = ((2 * S / c));
-           
+
         //    for (int i = 0; i <= height; i++)
         //    {
         //        for (int j = 0; j <= i; j++)
@@ -49,6 +49,9 @@ namespace C_Sharp_HW_Inheritance
 
         //}
 
+
+        //Метод печати в консоли
+     
         public void Print()
         {
             Console.WriteLine(this);

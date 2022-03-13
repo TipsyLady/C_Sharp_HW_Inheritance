@@ -32,6 +32,7 @@ namespace C_Sharp_HW_Inheritance
             return base.ToString() + $",со сторонами a = {a}, b = {b}";
         }
 
+        //Метод отрисовки в консоли
         public void Draw()
         {
             for (int i = 0; i < a; i++)
